@@ -1,9 +1,9 @@
-function create_hybrids()
+function create_hybrids(path_to_image_one, path_to_image_two)
 %CREATE_HYBRIDS Summary of this function goes here
 %   Detailed explanation goes here
 
-image_one = im2single(imread('data/dog.bmp'));
-image_two = im2single(imread('data/cat.bmp'));
+image_one = im2single(imread(path_to_image_one));
+image_two = im2single(imread(path_to_image_two));
 
 cutoff_frequency = 7.5;
 
